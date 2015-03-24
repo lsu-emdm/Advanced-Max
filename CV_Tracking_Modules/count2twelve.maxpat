@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 0,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 124.0, 79.0, 1169.0, 873.0 ],
+		"rect" : [ 77.0, 79.0, 1169.0, 873.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,13 +38,14 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-2",
+					"id" : "obj-1",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 517.0, 358.0, 150.0, 20.0 ],
+					"patching_rect" : [ 475.799988, 234.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 475.799988, 234.0, 0.0, 0.0 ],
 					"style" : "",
-					"text" : "Okay..."
+					"text" : "Blah"
 				}
 
 			}
@@ -132,7 +133,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 288.799988, 13.600005, 150.0, 20.0 ],
+					"patching_rect" : [ 327.799988, 92.000008, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "Count to 12 (ad nauseum)"
 				}
