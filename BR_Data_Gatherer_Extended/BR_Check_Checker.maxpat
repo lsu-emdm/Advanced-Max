@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 294.0, 161.0, 1101.0, 750.0 ],
+		"rect" : [ 171.0, 349.0, 1101.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,11 +38,67 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 753.0, 77.0, 53.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 0,
+						"parameter_enable" : 0
+					}
+,
+					"style" : "",
+					"text" : "dict bob"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 797.0, 448.0, 65.0, 22.0 ],
+					"style" : "",
+					"text" : "print Entry"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 974.0, 247.0, 50.0, 22.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 962.0, 279.0, 72.0, 22.0 ],
+					"style" : "",
+					"text" : "getEntry $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-54",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 195.0, 314.0, 150.0, 20.0 ],
+					"patching_rect" : [ 218.0, 394.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "set the multislider"
 				}
@@ -54,7 +110,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 165.0, 283.0, 150.0, 20.0 ],
+					"patching_rect" : [ 188.0, 363.0, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "sort low to high"
 				}
@@ -66,7 +122,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 203.0, 252.400009, 150.0, 20.0 ],
+					"patching_rect" : [ 226.0, 332.400024, 150.0, 20.0 ],
 					"style" : "",
 					"text" : "get amounts from dict"
 				}
@@ -79,7 +135,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 610.0, 163.5, 316.0, 60.0 ],
+					"patching_rect" : [ 745.0, 177.300018, 316.0, 60.0 ],
 					"style" : "",
 					"text" : "getMoney - get's individual amounts\ncheckMetro - randomly chooses amounts from the array\n  [notice they use a global namespace to work between object instances]"
 				}
@@ -92,7 +148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 416.400024, 299.200012, 150.0, 47.0 ],
+					"patching_rect" : [ 439.400024, 379.200012, 150.0, 47.0 ],
 					"style" : "",
 					"text" : "Not working at the moment - need to fix parsing the JSON..."
 				}
@@ -105,7 +161,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 356.800018, 46.0, 150.0, 33.0 ],
+					"patching_rect" : [ 473.800018, 31.0, 150.0, 33.0 ],
 					"style" : "",
 					"text" : "Dict filled with json file response from the server"
 				}
@@ -131,7 +187,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 620.200012, 233.400009, 24.0, 24.0 ],
+					"patching_rect" : [ 755.200012, 247.200027, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -143,7 +199,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 620.200012, 265.200012, 89.0, 22.0 ],
+					"patching_rect" : [ 755.200012, 279.000031, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "checkMetro $1"
 				}
@@ -157,7 +213,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 330.5, 246.599991, 50.0, 22.0 ],
+					"patching_rect" : [ 353.5, 326.599976, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -169,7 +225,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 330.5, 276.400024, 80.0, 22.0 ],
+					"patching_rect" : [ 353.5, 356.400024, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "getMoney $1"
 				}
@@ -180,9 +236,9 @@
 					"id" : "obj-35",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 720.600037, 309.799988, 110.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 855.600037, 323.600006, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "checkChecker.js",
 						"parameter_enable" : 0
@@ -202,7 +258,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 720.600037, 349.199982, 101.0, 22.0 ],
+					"patching_rect" : [ 855.600037, 363.0, 101.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -215,7 +271,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 720.600037, 230.399994, 50.0, 22.0 ],
+					"patching_rect" : [ 855.600037, 244.200012, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -227,7 +283,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 720.600037, 265.200012, 80.0, 22.0 ],
+					"patching_rect" : [ 855.600037, 279.000031, 80.0, 22.0 ],
 					"style" : "",
 					"text" : "getMoney $1"
 				}
@@ -240,7 +296,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 141.0, 314.0, 52.0, 22.0 ],
+					"patching_rect" : [ 164.0, 394.0, 52.0, 22.0 ],
 					"style" : "",
 					"text" : "setMulti"
 				}
@@ -254,7 +310,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 38.0, 469.0, 856.799988, 140.0 ],
+					"patching_rect" : [ 61.0, 549.0, 856.799988, 140.0 ],
 					"setminmax" : [ 0.0, 150000.0 ],
 					"size" : 1000,
 					"style" : ""
@@ -268,7 +324,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 126.5, 283.200012, 31.0, 22.0 ],
+					"patching_rect" : [ 149.5, 363.200012, 31.0, 22.0 ],
 					"style" : "",
 					"text" : "sort"
 				}
@@ -281,7 +337,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 233.0, 26.0, 60.0, 22.0 ],
+					"patching_rect" : [ 350.0, 11.0, 60.0, 22.0 ],
 					"style" : "",
 					"text" : "loadbang"
 				}
@@ -294,7 +350,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 327.0, 314.0, 87.0, 22.0 ],
+					"patching_rect" : [ 350.0, 394.0, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "updateChecks"
 				}
@@ -307,7 +363,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 112.0, 252.400009, 89.0, 22.0 ],
+					"patching_rect" : [ 135.0, 332.400024, 89.0, 22.0 ],
 					"style" : "",
 					"text" : "checkAmounts"
 				}
@@ -319,7 +375,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 112.0, 411.600006, 77.0, 22.0 ],
+					"patching_rect" : [ 135.0, 491.600006, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "print Checks"
 				}
@@ -332,7 +388,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 80.0, 276.400024, 24.0, 24.0 ],
+					"patching_rect" : [ 103.0, 356.400024, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -342,9 +398,9 @@
 					"id" : "obj-31",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 112.0, 361.0, 110.0, 22.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 135.0, 441.0, 110.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "checkChecker.js",
 						"parameter_enable" : 0
@@ -361,7 +417,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 88.0, 291.0, 117.0 ],
+					"patching_rect" : [ 350.0, 73.0, 314.0, 224.0 ],
 					"style" : ""
 				}
 
@@ -373,7 +429,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 233.0, 57.0, 106.0, 22.0 ],
+					"patching_rect" : [ 350.0, 42.0, 106.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"embed" : 0,
 						"parameter_enable" : 0
@@ -536,6 +592,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-35", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -590,6 +655,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-35", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -600,7 +683,7 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "checkChecker.js",
-				"bootpath" : "~/Documents/_University/Teaching/_7746 Advanced Max/InClassPatches/js_in_max",
+				"bootpath" : "~/Documents/_University/Teaching/_7746 Advanced Max/Advanced-Max/BR_Data_Gatherer_Extended",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1

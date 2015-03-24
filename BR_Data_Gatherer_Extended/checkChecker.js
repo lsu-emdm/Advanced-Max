@@ -5,7 +5,7 @@
 
 autowatch = 1;
 
-outlets = 2;
+outlets = 3;
 
 // Global namespace to be able to access the sortedChecks array among different instances of this object
 paychecks = new Global("paychecks");
@@ -45,6 +45,26 @@ function checksLoaded() {
 	}
 }
 
+function getEntry(entry) {
+	var searchString = "body["+entry+"]";
+	// var searchString = "body["+entry+"]::data";
+	outlet(2, searchString);
+	var paymentEntry = checkDict.get(searchString);
+	outlet(2, Object.prototype.toString.call(paymentEntry));
+	
+	outlet(2, paymentEntry.get("hire_date"));
+	
+	
+	for (var key in paymentEntry) {
+		outlet(2, key);
+		outlet(2, paymentEntry.get(key));
+  		/*if (paymentEntry.hasOwnProperty(key)) {
+			outlet(2, paymentEntry.get(key));
+  		}*/
+	}
+
+}
+
 function checkAmounts() {
 	var all_the_checks = checkDict.get('body');
 	paycheckAmounts = [];
@@ -75,7 +95,6 @@ function setMulti() {
 function getMoney(i) {
 	outlet(0, parseFloat(paychecks.sortedChecks[i]));
 }
-
 
 function checkMetro(enable) {
 	if (enable == 1){
